@@ -85,9 +85,11 @@ const courseContainer = document.getElementById('classes');
 courses.forEach(course =>{
     const li = document.createElement('li');
     if (course.completed == true){
-        li.style.background = "red";
-    } 
-    li.textContent = `${course.subject} ${course.number}`;
+        li.textContent = `✅ ${course.subject} ${course.number}`;
+        li.style.background = "#c24d2c";
+    } else {
+        li.textContent = `${course.subject} ${course.number}`;
+    }
     courseContainer.appendChild(li);
 });
 
@@ -95,6 +97,7 @@ courses.forEach(course =>{
 // Filtering the course array
 let cseCourses = courses.filter(course => course.subject === 'CSE');
 let wddCourses = courses.filter(course => course.subject === 'WDD');
+
 // Handle All button
 const allButton = document.querySelector('#all');
 allButton.addEventListener('click', () => {
@@ -103,8 +106,11 @@ allButton.addEventListener('click', () => {
         const li = document.createElement('li');
         li.textContent = `${course.subject} ${course.number}`;
         if (course.completed == true){
-            li.style.background = "red";
-        } 
+            li.textContent = `✅ ${course.subject} ${course.number}`;
+            li.style.background = "#c24d2c";
+        } else {
+            li.textContent = `${course.subject} ${course.number}`;
+        }
         courseContainer.appendChild(li);
     });
 });
@@ -115,10 +121,12 @@ cseButton.addEventListener('click', () => {
     courseContainer.replaceChildren();
     cseCourses.forEach(cseCourse => {
         const li = document.createElement('li');
-        li.textContent = `${cseCourse.subject} ${cseCourse.number}`;
         if (cseCourse.completed == true){
-            li.style.background = "red";
-        } 
+            li.textContent = `✅ ${cseCourse.subject} ${cseCourse.number}`;
+            li.style.background = "#c24d2c";
+        } else {
+            li.textContent = `${cseCourse.subject} ${cseCourse.number}`;
+        }
         courseContainer.appendChild(li);
     });
 });
@@ -130,10 +138,12 @@ wddButton.addEventListener('click', () => {
     courseContainer.replaceChildren();
     wddCourses.forEach(wddCourse => {
         const li = document.createElement('li');
-        li.textContent = `${wddCourse.subject} ${wddCourse.number}`;
         if (wddCourse.completed == true){
-            li.style.background = "red";
-        } 
+            li.textContent = `✅${wddCourse.subject} ${wddCourse.number}`;
+            li.style.background = "#c24d2c";
+        } else {
+            li.textContent = `${wddCourse.subject} ${wddCourse.number}`;
+        }
         courseContainer.appendChild(li);
     });
 });

@@ -116,10 +116,12 @@ header span {
 
 .navigation li.current {
     background-color: #c24d2c;
+    color: #1a2639;
 }
 
 .navigation a:hover {
-	background: #c24d2c; 
+	background: #c24d2c;
+    color: #1a2639; 
 }
 
 /*--------courses ------------*/
@@ -131,6 +133,7 @@ header span {
 
 .courses button:hover {
     background: #c24d2c;
+    color: #1a2639; 
 }
 
 .courses {
@@ -167,8 +170,8 @@ footer {
 }
 
 .social a:hover {
-    	background: #c24d2c; 
-
+    background: #c24d2c; 
+    color: #1a2639;
 }
 
 #classes {
