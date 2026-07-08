@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brendin Sauer">
+    <meta name="description" content="WDD 231 home page for Brendin Sauer">
+
+    <!--CSS links-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!--JavaScript links-->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+
+    <title>WDD 231 Home Page</title>
+</head>
+<body>
+    <header>
+        <img src="images/home.svg" alt="Home icon" heigh="512" width="512">
+        <span>Brendin's Home Page</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="images/brendin-photo.jpeg" alt="photo of Brendin S">
+        </section>
+        <section class="courses">
+            <h2>Web Certificate Courses</h2>
+            <button id="all" class="active">All</button>
+            <button id="cse" class="">CSE</button>
+            <button id="wdd" class="">WDD</button>
+            <ul id="classes"></ul>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="#" target="_blank"><img src="images/github.svg" alt="github link" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/linkedin.svg" alt="linkedin link" width="16" height="16"></a>
+            <a href="#" target="_blank"><img src="images/facebook.svg" alt="facebook link" width="16" height="16"></a>
+        </div>
+        <p id="copyright">copyright symbol and current year</p>
+        <p id="lastModified">last modified</p>
+
+    </footer>
+    
+</body>
+</html>
