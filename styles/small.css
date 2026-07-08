@@ -24,8 +24,9 @@ body {
 }
 
 nav {
-        min-width: 100%;
-
+    min-width: 100%;
+    background: #1a2639;
+    
 }
 
 main {
@@ -39,7 +40,12 @@ h1 {
 
 h2 {
     border: #eee solid 1px;
-    background: #eee;
+	background: #1a2639; 
+    color: #d9dad7; 
+}
+
+section {
+    background: #d9dad7; 
 }
 /*------------Header---------*/
 header {
@@ -50,6 +56,7 @@ header {
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
     min-width: 100%;
+    background: #d9dad7;
 }
 
 header img {
@@ -103,11 +110,12 @@ header span {
     color: #3e4a61; 
     text-decoration: none;
     border-bottom: solid 1px #ddd;
+    color: #d9dad7;
 
 }
 
 .navigation li.current {
-    background-color: #eee;
+    background-color: #c24d2c;
 }
 
 .navigation a:hover {
@@ -175,5 +183,3 @@ footer {
     width: 259px;
     margin-right: 13px;
 }
-
-
