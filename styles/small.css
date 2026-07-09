@@ -70,14 +70,14 @@ header img {
 
 header span {
     font-size: 1.2rem;
-    color:#3e4a61;
+    color:#1a2639;
 }
 
 /*------------Hamburger----------*/
 .hamburger {
     background: none;
     border: none;
-    color:#3e4a61;
+    color:#1a2639;
     cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -109,10 +109,11 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
+    background: #d9dad7; 
 
     text-decoration: none;
     border-bottom: solid 1px #ddd;
-    color: #d9dad7;
+    color: #1a2639;
 
 }
 
