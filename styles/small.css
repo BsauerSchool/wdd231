@@ -136,7 +136,7 @@ header span {
 
 .courses button:hover {
     background: #c24d2c;
-    color: #1a2639; 
+    color: black; 
 }
 
 .courses {
@@ -174,7 +174,7 @@ footer {
 
 .social a:hover {
     background: #c24d2c; 
-    color: #1a2639;
+    color: black;
 }
 
 #classes {
