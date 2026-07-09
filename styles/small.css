@@ -109,7 +109,7 @@ header span {
 .navigation a {
     display: block;
     padding: .8rem 10px;
-    background: #d9dad7; 
+    background: #c24d2c; 
 
     text-decoration: none;
     border-bottom: solid 1px #ddd;
@@ -118,12 +118,12 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #c24d2c;
-    color: #1a2639;
+    background-color: #ddd;
+    color: #c24d2c;
 }
 
 .navigation a:hover {
-	background: #c24d2c;
+	background: #ddd;
     color: #1a2639; 
 }
 
