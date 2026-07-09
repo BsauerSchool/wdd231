@@ -3,6 +3,7 @@
     header, main, nav, footer {
         max-width: 900px;
         margin: 0 auto;
+        font-family: "Montenegrin Gothic One", serif;
     }
 
     header {
@@ -68,6 +69,4 @@
         width: 100%;
         margin: 0 0 0 0;
     }
-
-    
 }
