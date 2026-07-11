@@ -81,16 +81,26 @@ const courses = [
 
 // Adding the courses
 const courseContainer = document.getElementById('classes');
+const numCredits = document.querySelector('#num-credits');
+let credits = 0;
 
-courses.forEach(course =>{
+credits = 0;
+courseContainer.replaceChildren();
+courses.forEach(course => {
     const li = document.createElement('li');
+    li.textContent = `${course.subject} ${course.number}`;
     if (course.completed == true){
         li.textContent = `✅ ${course.subject} ${course.number}`;
-        li.style.background = "#c24d2c";
+        li.style.background = "#1a2639";
+        li.style.color = "white";
+        credits += course.credits;
     } else {
         li.textContent = `${course.subject} ${course.number}`;
+        credits += course.credits;
+        li.style.borderColor = "black";
     }
     courseContainer.appendChild(li);
+    numCredits.innerHTML = `The total credits for courses listed below is ${credits}`;
 });
 
 
@@ -100,34 +110,47 @@ let wddCourses = courses.filter(course => course.subject === 'WDD');
 
 // Handle All button
 const allButton = document.querySelector('#all');
+
 allButton.addEventListener('click', () => {
+    credits = 0;
     courseContainer.replaceChildren();
     courses.forEach(course => {
         const li = document.createElement('li');
         li.textContent = `${course.subject} ${course.number}`;
         if (course.completed == true){
             li.textContent = `✅ ${course.subject} ${course.number}`;
-            li.style.background = "#c24d2c";
+            li.style.background = "#1a2639";
+            li.style.color = "white";
+            credits += course.credits;
         } else {
             li.textContent = `${course.subject} ${course.number}`;
+            credits += course.credits;
+            li.style.borderColor = "black";
         }
         courseContainer.appendChild(li);
+        numCredits.innerHTML = `The total credits for courses listed below is ${credits}`;
     });
 });
 
 // Handle CSE button
 const cseButton = document.querySelector('#cse');
 cseButton.addEventListener('click', () => {
+    credits = 0;
     courseContainer.replaceChildren();
     cseCourses.forEach(cseCourse => {
         const li = document.createElement('li');
         if (cseCourse.completed == true){
             li.textContent = `✅ ${cseCourse.subject} ${cseCourse.number}`;
-            li.style.background = "#c24d2c";
+            li.style.background = "#1a2639";
+            li.style.color = "white";
+            credits += cseCourse.credits;
         } else {
             li.textContent = `${cseCourse.subject} ${cseCourse.number}`;
+            li.style.borderColor = "black";
+            credits += cseCourse.credits;
         }
         courseContainer.appendChild(li);
+        numCredits.innerHTML = `The total credits for courses listed below is ${credits}`;
     });
 });
 
@@ -135,15 +158,21 @@ cseButton.addEventListener('click', () => {
 // Handle WDD button
 const wddButton = document.querySelector('#wdd');
 wddButton.addEventListener('click', () => {
+    credits = 0;
     courseContainer.replaceChildren();
     wddCourses.forEach(wddCourse => {
         const li = document.createElement('li');
         if (wddCourse.completed == true){
             li.textContent = `✅${wddCourse.subject} ${wddCourse.number}`;
-            li.style.background = "#c24d2c";
+            li.style.background = "#1a2639";
+            li.style.color = "white";
+            credits += wddCourse.credits;
         } else {
             li.textContent = `${wddCourse.subject} ${wddCourse.number}`;
+            credits += wddCourse.credits;
+            li.style.borderColor = "black";
         }
         courseContainer.appendChild(li);
+        numCredits.innerHTML = `The total credits for courses listed below is ${credits}`;
     });
 });
