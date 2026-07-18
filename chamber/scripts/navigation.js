@@ -12,6 +12,6 @@ navbutton.addEventListener('click', () => {
 
 const today = new Date();
 let currentYear = today.getFullYear();
-document.getElementById("copyright").innerHTML = `&copy;${currentYear}`;
+document.getElementById("copyright").innerHTML = `&copy;${currentYear} Layton Chamber of Commerce`;
 
-document.getElementById("last-modified").innerHTML = `last Modification ${document.lastModified}`;
+document.getElementById("last-modified").innerHTML = `last Modification: ${document.lastModified}`;
