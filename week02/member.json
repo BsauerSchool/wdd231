@@ -1,0 +1,18 @@
+{
+    "family_name": "Sauer",
+    "move_in_date": "2025-01-01",
+    "number_of_records": 2,
+    "visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Tessa S",
+            "gender": "Female",
+            "birthdate": "1994-08-05"
+        },
+        {
+            "name": "Brendin S",
+            "gender": "Male",
+            "birthdate": "1991-08-13"
+        }
+    ]
+}
