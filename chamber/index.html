@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Brendin Sauer">
+    <meta name="description" content="#">
+
+    <!-- Facebook Social Media tags -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+
+    <!-- css -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+    <script src="scripts/weather.js"defer></script>
+
+    <!-- favicon -->
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="images/commerce-icon.svg" alt="Chamber of Commerce icon" height="24" width="24">
+        <span>Layton Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Home</h1>
+    <main>
+        <div id="hero">
+            <img src="images/layton-downtown.webp" alt="layton city downtown">
+            <div id="call">
+                <lablel>Join Layton Chamber of Commerce today!</lablel>
+                <button>Join</button>
+            </div>
+        </div>
+        
+        <section id="current-events">
+            <h2>Current Events</h2>
+            <ul>
+                <li>event 1</li>
+                <li>event 2</li>
+                <li>event 3</li>
+            </ul>
+        </section>
+        <section id="weather">
+            <h2 id="location">Weather</h2>
+            <img id="graphic" src="" alt="">
+            <p id="description"></p>
+            <p id="current-temp"></p>
+            <img id="weather-icon" src="" alt="">
+            <!-- <figure>
+                
+                <figcaption></figcaption>
+            </figure> -->
+        </section>
+        <div id="spotlights">
+            <h2 id="spot-h2">Spotlights</h2>
+            <div id="cards"></div>
+        </div>
+    </main>
+    <footer>
+        <section id="contact-info">
+            <p>Layton Chamber of Commerce</p>
+            <p>100 special place</p>
+            <p>Layton, UT, 84041</p>
+            <p>laytoncity.info@lcit.org</p>
+            <p>(123) 332-3323</p>
+        </section>
+        <section id="social-media">
+            <a href="linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin link" width="16" height="16"></a>
+            <a href="github.com." target="_blank"><img src="images/github.svg" alt="Github link" width="16" height="16"></a>
+            <a href="facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook link" width="16" height="16"></a>
+        </section>
+        <section id="date-info">
+            <p>WDD231 Class Project</p>
+            <p>Brendin Sauer</p>
+            <p id="copyright"></p>
+            <p id="last-modified"></p>
+        </section>
+    </footer>
+
+</body>
+</html>

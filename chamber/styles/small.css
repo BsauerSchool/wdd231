@@ -19,6 +19,7 @@ header {
     padding: 5px 0 5px 10px;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
+    background-color: #9c6767;
 }
 
 header img {
@@ -30,6 +31,7 @@ header img {
 
 header span {
     font-size: 1.2rem;
+    text-align: left;
 }
 
 /* ----------Hamburger --------*/
@@ -62,6 +64,7 @@ header span {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    
 }
 
 .navigation a {
@@ -70,7 +73,9 @@ header span {
     text-decoration: none;
     border-top: solid 1px #ddd;
     width: 100dvw;
-    
+    color: #ddd;
+
+;
 }
 
 .navigation li.current {
@@ -78,6 +83,7 @@ header span {
 }
 .navigation li.current a {
     text-decoration: underline;
+    color: black;
 }
 
 .navigation a:hover {
@@ -87,6 +93,10 @@ header span {
 /* ----------main---------------*/
 main {
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 /* ----------Footer-------------*/
@@ -95,6 +105,7 @@ footer {
     justify-content: space-between;
     background-color: #eee;
     padding: 1rem 10px;
+    background-color: #9c6767;
 }
 
 #social-media {
@@ -150,9 +161,10 @@ footer p {
     height: 250px;
     padding-bottom: 20px;
     margin: 5px 0 10px 5%;
+    background-color: #ddd;
 }
 #cards h2 {
-    border-bottom: solid #ddd 1px;
+    border-bottom: solid white 1px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,4 +187,74 @@ footer p {
     display: block;
     grid-column: 1/2;
     grid-row: 3/5;
+}
+
+/* ----------index CSS--------*/
+#current-events , #weather, #spotlights{
+    width: 300px;
+    height:auto;
+    
+}
+
+#current-events {
+    margin:0 0 4px 13px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #ddd;
+    min-height: 209px;
+    height: auto;
+}
+
+#current-events ul{
+    list-style-type: none;
+}
+
+#current-events li {
+    margin: 5px 0 0 0;
+    text-align: left;
+}
+
+#spot-h2 {
+    border-bottom: solid black 1px;
+    margin: 0 0 0px 8px;
+    width: 100%;
+}
+
+#weather {
+    border: solid black 1px;
+    border-radius: 10px;
+    margin:0 0 4px 13px;
+    background-color: #ddd;
+    
+}
+
+#description {
+    text-transform: capitalize;
+    margin: 0;
+}
+
+#location  {
+    margin: 0;
+}
+
+#current-temp {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#call {
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 4px 20px 4px 20px;
+    margin: 5px 0 5px 0;
+    background-color: #9c6767;
+}
+
+#call button {
+    min-width: 44px;
+    width: auto;
+    margin: 0 10px 0 10px;
+    padding: 2px 12px 2px 12px;
+    background-color: #8997f5;
+    border-radius: 10px;
 }

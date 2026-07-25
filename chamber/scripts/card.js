@@ -5,7 +5,8 @@ const url = './data/members.json'
 async function getData() {
   const response = await fetch(url); // request
   const data = await response.json(); // parse the JSON data
-  displayData(data.members)
+  displayData(data.members);
+  displaySpotlightData(data.members);
 }
 
 getData();
@@ -51,13 +52,5 @@ const displayData = (members) => {
     card.appendChild(membershipLevel);
 
     cardList.appendChild(card);
-    console.log(card);
   });
 }
-
-
-
-
-
-
-
